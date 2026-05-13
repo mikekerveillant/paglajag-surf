@@ -339,6 +339,38 @@ export default function SiargaoSurfCampLandingPage() {
         </div>
       </section>
 
+{/* DRONE VIDEO */}
+<section className="relative overflow-hidden bg-[#021F28] py-10 md:py-16">
+  <div className="mx-auto max-w-7xl px-6 md:px-10">
+    <div className="overflow-hidden rounded-[2.5rem] shadow-2xl ring-1 ring-white/10">
+      <video
+        className="h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls={false}
+      >
+        <source src="/videos/drone-siargao.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div className="mx-auto mt-8 max-w-3xl text-center text-white">
+      <p className="text-sm uppercase tracking-[0.3em] text-[#18B6C7]">
+        Siargao, Philippines
+      </p>
+
+      <h2 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
+        The island that inspires this project.
+      </h2>
+
+      <p className="mt-6 text-lg leading-8 text-white/70">
+        A place shaped by waves, community, and opportunity.
+      </p>
+    </div>
+  </div>
+</section>
+
       {/* IMPACT STATS */}
       <section className="relative mx-auto -mt-16 grid max-w-7xl grid-cols-1 gap-4 px-6 pb-16 md:grid-cols-4 md:px-10">
         {stats.map(([number, label]) => (
