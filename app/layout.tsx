@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Empowering Paglajag | Siargao Youth Surf Camp",
-  description: "Supporting the Paglajag youths in Siargao through surf, light, and opportunity.",
+  description:
+    "Supporting the Paglajag youths in Siargao through surf, light, and opportunity.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
