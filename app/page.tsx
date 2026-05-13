@@ -45,6 +45,16 @@ const donationCards = [
   ["👥", "Surf Instructors", "Funds help cover transport, fuel, and logistics for experienced coaches from General Luna.", imagePaths.instructors],
 ];
 
+const fundingGoal = 250000;
+const amountRaised = 48500;
+const progressPercent = Math.round((amountRaised / fundingGoal) * 100);
+
+const impactTargets = [
+  ["₱1,500", "Helps fund transport and fuel for surf instructors traveling from General Luna."],
+  ["₱3,000", "Provides a solar lantern for a household so children can study safely at night."],
+  ["₱12,000", "Helps purchase a beginner surfboard so more youth can participate in the camp."],
+];
+
 const galleryImages = [
   [imagePaths.youthRoom, "Paglajag youth leaders"],
   [imagePaths.youthGroup, "Paglajag community"],
@@ -237,6 +247,7 @@ function runComponentSmokeTests() {
   console.assert(galleryImages.length === 6, "Expected six gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
+  console.assert(progressPercent > 0, "Expected donation progress to be greater than zero");
   console.assert(
     donationCards.some((card) => card[1] === "Solar Lanterns"),
     "Donation cards should include Solar Lanterns"
@@ -363,6 +374,66 @@ export default function SiargaoSurfCampLandingPage() {
       </section>
 
       <WaveDivider flip />
+
+      {/* FUNDING PROGRESS */}
+      <section className="px-6 py-24 md:px-10">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#063B4A] to-[#08798C] text-white shadow-2xl">
+          <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1fr_0.9fr]">
+            <div className="p-8 md:p-14 lg:p-20">
+              <SectionEyebrow light>Fundraising Progress</SectionEyebrow>
+              <h2 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
+                Building the first Paglajag youth surf camp.
+              </h2>
+
+              <p className="mt-8 max-w-2xl text-lg leading-8 text-white/80">
+                We are currently raising funds for additional surfboards, solar lanterns, instructor support, and logistics for the first surf camp in Anajawan, Del Carmen.
+              </p>
+
+              <div className="mt-12 rounded-[2rem] bg-white/10 p-8 backdrop-blur">
+                <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.25em] text-[#BFEFE6]">Raised So Far</p>
+                    <p className="mt-2 text-5xl font-semibold">₱48,500</p>
+                  </div>
+                  <div className="text-left md:text-right">
+                    <p className="text-sm uppercase tracking-[0.25em] text-[#BFEFE6]">Goal</p>
+                    <p className="mt-2 text-3xl font-semibold">₱250,000</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 h-5 overflow-hidden rounded-full bg-white/15">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-[#18B6C7] to-[#BFEFE6]"
+                    style={{ width: `${progressPercent}%` }}
+                  />
+                </div>
+
+                <div className="mt-4 flex items-center justify-between text-sm text-white/70">
+                  <span>{progressPercent}% funded</span>
+                  <span>{Math.max(0, fundingGoal - amountRaised).toLocaleString()} PHP remaining</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#ECFBF8] p-8 text-[#063B4A] md:p-14">
+              <SectionEyebrow>What Your Donation Can Do</SectionEyebrow>
+
+              <div className="mt-8 space-y-5">
+                {impactTargets.map(([amount, text]) => (
+                  <div key={amount} className="rounded-[1.75rem] border border-[#BFEFE6] bg-white p-6 shadow-sm">
+                    <p className="text-3xl font-semibold text-[#08798C]">{amount}</p>
+                    <p className="mt-3 leading-7 text-[#34616B]">{text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <Button href="#donate" className="mt-10 w-full justify-center">
+                Support the Project
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* WHY SURFING */}
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-24 md:grid-cols-2 md:px-10">
