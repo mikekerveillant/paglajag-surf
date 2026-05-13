@@ -26,6 +26,10 @@ const imagePaths = {
   surfing: "/images/james-surfing.jpg",
 };
 
+const videoPaths = {
+  drone: "/videos/drone-siargao.mp4",
+};
+
 const stats = [
   ["150+", "youth in the Paglajag community"],
   ["2", "surfboards currently available"],
@@ -258,6 +262,7 @@ function runComponentSmokeTests() {
   console.assert(donationCards.length === 3, "Expected three donation support cards");
   console.assert(galleryImages.length === 6, "Expected six gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
+  console.assert(videoPaths.drone === "/videos/drone-siargao.mp4", "Expected drone video path to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
   console.assert(progressPercent > 0, "Expected donation progress to be greater than zero");
   console.assert(partners.length === 3, "Expected three partner cards");
@@ -339,37 +344,37 @@ export default function SiargaoSurfCampLandingPage() {
         </div>
       </section>
 
-{/* DRONE VIDEO */}
-<section className="relative overflow-hidden bg-[#021F28] py-10 md:py-16">
-  <div className="mx-auto max-w-7xl px-6 md:px-10">
-    <div className="overflow-hidden rounded-[2.5rem] shadow-2xl ring-1 ring-white/10">
-      <video
-        className="h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        controls={false}
-      >
-        <source src="/videos/drone-siargao.mp4" type="video/mp4" />
-      </video>
-    </div>
+      {/* DRONE VIDEO */}
+      <section className="relative overflow-hidden bg-[#021F28] px-6 py-16 text-white md:px-10 md:py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(24,182,199,0.22),transparent_38%)]" />
 
-    <div className="mx-auto mt-8 max-w-3xl text-center text-white">
-      <p className="text-sm uppercase tracking-[0.3em] text-[#18B6C7]">
-        Siargao, Philippines
-      </p>
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <SectionEyebrow light>Siargao from Above</SectionEyebrow>
+            <h2 className="text-4xl font-semibold leading-tight md:text-6xl">
+              The island that inspires this project.
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+              A place shaped by waves, community, and opportunity.
+            </p>
+          </div>
 
-      <h2 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
-        The island that inspires this project.
-      </h2>
-
-      <p className="mt-6 text-lg leading-8 text-white/70">
-        A place shaped by waves, community, and opportunity.
-      </p>
-    </div>
-  </div>
-</section>
+          <div className="overflow-hidden rounded-[2.5rem] bg-[#063B4A] shadow-2xl ring-1 ring-white/10">
+            <video
+              className="aspect-video h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              poster={imagePaths.ocean}
+            >
+              <source src={videoPaths.drone} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
 
       {/* IMPACT STATS */}
       <section className="relative mx-auto -mt-16 grid max-w-7xl grid-cols-1 gap-4 px-6 pb-16 md:grid-cols-4 md:px-10">
