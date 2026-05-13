@@ -71,6 +71,13 @@ const siargaoReasons = [
   ["🏄", "Surfing can create opportunity", "Surfing is deeply connected to Siargao’s identity and tourism economy. Learning early can open future opportunities in guiding, coaching, and hospitality."],
 ];
 
+const roadmapGoals = [
+  ["June 2026", "Launch the First Surf Camp", "Host the first Paglajag youth surf camp in Anajawan with local coaches and community volunteers."],
+  ["July 2026", "Expand Equipment Access", "Purchase additional beginner surfboards and safety gear so more youth — especially girls — can participate."],
+  ["August 2026", "Solar Lantern Distribution", "Provide solar lanterns to support safer evenings and help children study after dark."],
+  ["Late 2026", "Build Long-Term Momentum", "Develop recurring surf sessions, mentorship, and future partnerships that continue supporting the community."],
+];
+
 const galleryImages = [
   [imagePaths.youthRoom, "Paglajag youth leaders"],
   [imagePaths.youthGroup, "Paglajag community"],
@@ -267,6 +274,7 @@ function runComponentSmokeTests() {
   console.assert(progressPercent > 0, "Expected donation progress to be greater than zero");
   console.assert(partners.length === 3, "Expected three partner cards");
   console.assert(siargaoReasons.length === 3, "Expected three Siargao impact cards");
+  console.assert(roadmapGoals.length === 4, "Expected four roadmap milestones");
   console.assert(
     donationCards.some((card) => card[1] === "Solar Lanterns"),
     "Donation cards should include Solar Lanterns"
@@ -629,6 +637,58 @@ export default function SiargaoSurfCampLandingPage() {
             <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-56 rounded-[2rem]" label="Surf" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-56 rounded-[2rem]" label="Siargao" />
             <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="col-span-2 h-56 rounded-[2rem]" label="Discipline" />
+          </div>
+        </div>
+      </section>
+
+      {/* SUMMER 2026 ROADMAP */}
+      <section className="relative overflow-hidden px-6 py-24 md:px-10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(24,182,199,0.12),transparent_28%),radial-gradient(circle_at_85%_90%,rgba(8,121,140,0.12),transparent_32%)]" />
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <SectionEyebrow>Summer 2026 Camp Goals</SectionEyebrow>
+              <h2 className="text-4xl font-semibold leading-tight md:text-6xl">
+                A roadmap for the first year of the project.
+              </h2>
+            </div>
+
+            <p className="max-w-md leading-7 text-[#34616B]">
+              The goal is not just a single surf camp — but the beginning of something sustainable for the Paglajag youth and wider community.
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-5 top-0 hidden h-full w-[2px] bg-gradient-to-b from-[#18B6C7] to-[#BFEFE6] md:block" />
+
+            <div className="space-y-8">
+              {roadmapGoals.map(([date, title, text], index) => (
+                <div key={title} className="relative grid grid-cols-1 gap-6 md:grid-cols-[80px_1fr] md:gap-10">
+                  <div className="relative hidden md:flex items-start justify-center">
+                    <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#18B6C7] text-sm font-bold text-white shadow-lg ring-8 ring-[#ECFBF8]">
+                      {index + 1}
+                    </div>
+                  </div>
+
+                  <Card className="border border-[#BFEFE6] bg-white/90 backdrop-blur">
+                    <div className="p-8 md:p-10">
+                      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#08798C]">
+                        {date}
+                      </p>
+
+                      <h3 className="mt-3 text-3xl font-semibold text-[#063B4A]">
+                        {title}
+                      </h3>
+
+                      <p className="mt-5 max-w-3xl leading-8 text-[#34616B]">
+                        {text}
+                      </p>
+                    </div>
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
