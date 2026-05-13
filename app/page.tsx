@@ -410,14 +410,29 @@ export default function SiargaoSurfCampLandingPage() {
             Hi, I’m James.
             <br />
             <br />
-            Together with friends and surf coaches from General Luna, we’re building a community surf camp experience for the Paglajag youth in Anajawan.
+            I’m working on a project to support the Paglajag youth in Anajawan through a community surf camp.
+            <br />
+            <br />
+            Together with a few friends and surf coaches from General Luna, Siargao, we’re planning a 2-day camp where kids can learn how to surf in a safe and encouraging environment.
           </p>
+
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            A safe place to surf.
+            It’s not just about surfing.
             <br />
-            A place to grow confidence.
             <br />
-            A place to belong.
+            It’s about building confidence, discipline, teamwork, and creating positive experiences together.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-[#34616B]">
+            We’re also raising funds to help keep the project going.
+            <br />
+            <br />
+            Part of that includes providing solar lanterns so children can study at night and families feel safer after dark.
+            We’re also hoping to purchase more surfboards so more young people — especially girls — can participate.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-[#34616B]">
+            My hope is that this can grow into something that creates more opportunities for the community and helps young people feel supported, inspired, and proud of where they come from.
           </p>
         </div>
       </section>
