@@ -322,7 +322,7 @@ export default function SiargaoSurfCampLandingPage() {
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Button href="#donate">Get Involved Now <span className="ml-2">♡</span></Button>
+                <Button href="#donate">Donate Now <span className="ml-2">♡</span></Button>
                 <Button href="#story" variant="outlineLight">Read the Story <ArrowIcon /></Button>
               </div>
             </div>
@@ -604,7 +604,7 @@ export default function SiargaoSurfCampLandingPage() {
               <SectionEyebrow>What Donations Support</SectionEyebrow>
               <h2 className="text-4xl font-semibold leading-tight md:text-6xl">Small contributions can create lasting change.</h2>
             </div>
-            <Button href="#donate" variant="dark" className="w-fit">Get Involved via GCash</Button>
+            <Button href="#donate" variant="dark" className="w-fit">Donate via GCash</Button>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -696,11 +696,11 @@ export default function SiargaoSurfCampLandingPage() {
               Every contribution helps put more youth in the water and bring this project to life.
             </p>
             <div className="mt-10 rounded-3xl bg-[#ECFBF8] p-8 ring-1 ring-[#BFEFE6]">
-              <p className="text-sm uppercase tracking-[0.25em] text-[#08798C]">Get Involved via GCash</p>
+              <p className="text-sm uppercase tracking-[0.25em] text-[#08798C]">Donate via GCash</p>
               <p className="mt-3 text-4xl font-semibold tracking-tight text-[#063B4A]">09175082889</p>
             </div>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button href="#donate">Get Involved Now</Button>
+              <Button href="#donate">Donate Now</Button>
               <Button onClick={() => setIsShareOpen(true)} variant="outlineDark">Share This Project</Button>
             </div>
           </div>
