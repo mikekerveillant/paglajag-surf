@@ -55,6 +55,18 @@ const impactTargets = [
   ["₱12,000", "Helps purchase a beginner surfboard so more youth can participate in the camp."],
 ];
 
+const partners = [
+  ["🏄", "Local Surf Coaches", "Experienced instructors from General Luna helping create a safe first experience in the water."],
+  ["🌴", "Paglajag Community", "Youth leaders and families in Anajawan helping guide the project from the ground up."],
+  ["🤝", "Supporters & Donors", "Friends, families, and partners helping fund boards, lanterns, transport, and camp logistics."],
+];
+
+const siargaoReasons = [
+  ["🌊", "An island shaped by the ocean", "Many youth in Siargao grow up surrounded by waves and nature, yet access to surf equipment and organized activities remains limited."],
+  ["⚡", "Limited access after dark", "Some households in Anajawan still have limited lighting at night, making it harder for children to study safely and consistently."],
+  ["🏄", "Surfing can create opportunity", "Surfing is deeply connected to Siargao’s identity and tourism economy. Learning early can open future opportunities in guiding, coaching, and hospitality."],
+];
+
 const galleryImages = [
   [imagePaths.youthRoom, "Paglajag youth leaders"],
   [imagePaths.youthGroup, "Paglajag community"],
@@ -248,6 +260,8 @@ function runComponentSmokeTests() {
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
   console.assert(progressPercent > 0, "Expected donation progress to be greater than zero");
+  console.assert(partners.length === 3, "Expected three partner cards");
+  console.assert(siargaoReasons.length === 3, "Expected three Siargao impact cards");
   console.assert(
     donationCards.some((card) => card[1] === "Solar Lanterns"),
     "Donation cards should include Solar Lanterns"
@@ -265,6 +279,16 @@ export default function SiargaoSurfCampLandingPage() {
 
   return (
     <main className="min-h-screen bg-[#ECFBF8] text-[#07313B]">
+      {/* STICKY DONATE BUTTON */}
+      <a
+        href="#donate"
+        className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#18B6C7] to-[#08798C] px-6 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-2xl transition hover:scale-105 hover:shadow-[#18B6C7]/40 md:bottom-8 md:right-8"
+      >
+        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-lg backdrop-blur">
+          ♡
+        </span>
+        Get Involved
+      </a>
       {/* HERO */}
       <section className="relative min-h-screen overflow-hidden bg-[#063B4A] text-white">
         <div className="absolute inset-0">
@@ -291,11 +315,14 @@ export default function SiargaoSurfCampLandingPage() {
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-white/88 md:text-xl">
-                We are raising funds to help the Paglajag youth access surfboards, safe instruction, and solar lanterns — creating a positive space to learn, grow, and come together as a community.
+                More surfboards. More opportunities. More youth in the water.
+                <br />
+                <br />
+                We’re raising funds for surfboards, solar lanterns, and safe instruction for the Paglajag community in Siargao.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Button href="#donate">Donate Now <span className="ml-2">♡</span></Button>
+                <Button href="#donate">Get Involved Now <span className="ml-2">♡</span></Button>
                 <Button href="#story" variant="outlineLight">Read the Story <ArrowIcon /></Button>
               </div>
             </div>
@@ -335,10 +362,17 @@ export default function SiargaoSurfCampLandingPage() {
           <SectionEyebrow>The Beginning</SectionEyebrow>
           <h2 className="text-4xl font-semibold leading-tight md:text-6xl">After meeting the Paglajag youth, I wanted to do more.</h2>
           <p className="mt-8 text-lg leading-8 text-[#34616B]">
-            Hi, I’m James. I’m working with friends and surf coaches from General Luna to support the Paglajag youth in Anajawan through a community surf camp.
+            Hi, I’m James.
+            <br />
+            <br />
+            Together with friends and surf coaches from General Luna, we’re building a community surf camp experience for the Paglajag youth in Anajawan.
           </p>
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            The goal is simple: create a safe, fun, and inspiring space where young people can learn to surf, build confidence, develop discipline, and feel supported by the community around them.
+            A safe place to surf.
+            <br />
+            A place to grow confidence.
+            <br />
+            A place to belong.
           </p>
         </div>
       </section>
@@ -386,7 +420,15 @@ export default function SiargaoSurfCampLandingPage() {
               </h2>
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-white/80">
-                We are currently raising funds for additional surfboards, solar lanterns, instructor support, and logistics for the first surf camp in Anajawan, Del Carmen.
+                Funding will help support:
+                <br />
+                • Additional surfboards
+                <br />
+                • Solar lanterns
+                <br />
+                • Instructor transport
+                <br />
+                • Camp logistics
               </p>
 
               <div className="mt-12 rounded-[2rem] bg-white/10 p-8 backdrop-blur">
@@ -441,10 +483,22 @@ export default function SiargaoSurfCampLandingPage() {
           <SectionEyebrow>Why Surfing Matters</SectionEyebrow>
           <h2 className="text-4xl font-semibold leading-tight md:text-6xl">The ocean is right there. Access is the missing piece.</h2>
           <p className="mt-8 text-lg leading-8 text-[#34616B]">
-            Around 150 youth are part of the Paglajag community, but there are only two surfboards available. Right now, mostly boys know how to surf — even though many girls are excited to learn too.
+            150+ youth.
+          <br />
+          Only 2 surfboards.
+          <br />
+          And many girls still waiting for a chance to learn.
           </p>
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            More boards and safe instruction can turn surfing into more than a sport. It can become a source of confidence, joy, discipline, inclusion, and even future livelihood opportunities.
+            Surfing can become more than a sport.
+          <br />
+          Confidence.
+          <br />
+          Discipline.
+          <br />
+          Community.
+          <br />
+          Opportunity.
           </p>
         </div>
 
@@ -454,6 +508,66 @@ export default function SiargaoSurfCampLandingPage() {
           <div className="col-span-2 rounded-[2rem] bg-gradient-to-br from-[#063B4A] to-[#08798C] p-8 text-white shadow-sm">
             <p className="text-5xl font-semibold">2 boards</p>
             <p className="mt-3 max-w-md text-white/75">for a community of 150+ youth. More boards means more access, more inclusion, and more time in the water.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY THIS MATTERS IN SIARGAO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#063B4A] to-[#08798C] px-6 py-24 text-white md:px-10">
+        <div className="absolute inset-0 opacity-15">
+          <img src={imagePaths.ocean} alt="Siargao coastline" className="h-full w-full object-cover" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mb-14 max-w-4xl">
+            <SectionEyebrow light>Why This Matters in Siargao</SectionEyebrow>
+            <h2 className="text-4xl font-semibold leading-tight md:text-6xl">
+              More than a surf camp.
+              <br />
+              A chance to create opportunity close to home.
+            </h2>
+
+            <p className="mt-8 max-w-3xl text-lg leading-8 text-white/78">
+              Siargao is known around the world for its waves.
+              <br />
+              <br />
+              But many local youth still have limited access to surfboards, organized programs, and opportunities connected to the island’s growing surf culture.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {siargaoReasons.map(([icon, title, text]) => (
+              <Card key={title} className="border border-white/10 bg-white/10 backdrop-blur">
+                <div className="p-8">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-4xl">
+                    {icon}
+                  </div>
+
+                  <h3 className="text-2xl font-semibold text-white">{title}</h3>
+
+                  <p className="mt-4 leading-7 text-white/75">
+                    {text}
+                  </p>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_0.8fr]">
+            <div className="rounded-[2rem] bg-white/10 p-8 backdrop-blur md:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#BFEFE6]">The Bigger Picture</p>
+
+              <p className="mt-6 text-2xl font-semibold leading-relaxed text-white md:text-3xl">
+                When youth feel connected to their community, the ocean, and a positive future — it changes what they believe is possible.
+              </p>
+            </div>
+
+            <ImageFrame
+              src={imagePaths.hero}
+              alt="Paglajag youth in Siargao"
+              className="min-h-[320px] rounded-[2rem]"
+              label="Siargao"
+            />
           </div>
         </div>
       </section>
@@ -490,7 +604,7 @@ export default function SiargaoSurfCampLandingPage() {
               <SectionEyebrow>What Donations Support</SectionEyebrow>
               <h2 className="text-4xl font-semibold leading-tight md:text-6xl">Small contributions can create lasting change.</h2>
             </div>
-            <Button href="#donate" variant="dark" className="w-fit">Donate via GCash</Button>
+            <Button href="#donate" variant="dark" className="w-fit">Get Involved via GCash</Button>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -508,6 +622,45 @@ export default function SiargaoSurfCampLandingPage() {
         </div>
       </section>
 
+      {/* PARTNERS */}
+      <section className="px-6 py-24 md:px-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-3xl">
+              <SectionEyebrow>Partners</SectionEyebrow>
+              <h2 className="text-4xl font-semibold leading-tight md:text-6xl">Built with community, coaches, and supporters.</h2>
+            </div>
+            <p className="max-w-md leading-7 text-[#34616B]">
+              This project grows through collaboration — from the youth and families in Anajawan to the surf coaches, donors, and friends helping make the first camp possible.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {partners.map(([icon, title, text]) => (
+              <Card key={title} className="border border-[#BFEFE6] bg-white/85">
+                <div className="p-8">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#ECFBF8] text-4xl">
+                    {icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold text-[#063B4A]">{title}</h3>
+                  <p className="mt-4 leading-7 text-[#34616B]">{text}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-[2rem] bg-gradient-to-r from-[#063B4A] to-[#08798C] p-8 text-white md:flex md:items-center md:justify-between md:p-10">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#BFEFE6]">Become a Partner</p>
+              <h3 className="mt-3 text-3xl font-semibold">Want to support with boards, gear, coaching, or sponsorship?</h3>
+            </div>
+            <Button href="mailto:jvgilberd@gmail.com?subject=Partner%20with%20Empowering%20Paglajag" className="mt-6 md:mt-0">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* FUTURE VISION */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
         <div className="overflow-hidden rounded-[2.5rem] bg-[#063B4A] text-white shadow-sm">
@@ -516,10 +669,13 @@ export default function SiargaoSurfCampLandingPage() {
               <SectionEyebrow light>The Future Vision</SectionEyebrow>
               <h2 className="text-4xl font-semibold leading-tight md:text-6xl">A community-centered surf camp in Siargao.</h2>
               <p className="mt-8 text-lg leading-8 text-white/75">
-                The long-term vision is to build a surf camp and learning space that supports youth development, creates local opportunity, and keeps giving back to the community.
+                The vision is bigger than one surf camp.
+              <br />
+              <br />
+              A long-term community space where surfing, learning, and opportunity come together.
               </p>
               <p className="mt-5 text-lg leading-8 text-white/75">
-                This first camp is the starting point — a way to prove the model, build trust, and create momentum for something much bigger.
+                This is just the beginning.
               </p>
             </div>
             <ImageFrame src={imagePaths.ocean} alt="Siargao ocean" className="h-full min-h-[520px] rounded-none" />
@@ -537,14 +693,14 @@ export default function SiargaoSurfCampLandingPage() {
             <div className="mx-auto mb-6 text-5xl text-[#08798C]">♡</div>
             <h2 className="text-4xl font-semibold md:text-6xl">Help us get more youth in the water.</h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#34616B]">
-              Every donation helps provide surfboards, solar lanterns, safe instruction, and the logistics needed to bring this camp to life.
+              Every contribution helps put more youth in the water and bring this project to life.
             </p>
             <div className="mt-10 rounded-3xl bg-[#ECFBF8] p-8 ring-1 ring-[#BFEFE6]">
-              <p className="text-sm uppercase tracking-[0.25em] text-[#08798C]">Donate via GCash</p>
+              <p className="text-sm uppercase tracking-[0.25em] text-[#08798C]">Get Involved via GCash</p>
               <p className="mt-3 text-4xl font-semibold tracking-tight text-[#063B4A]">09175082889</p>
             </div>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button href="#donate">Donate Now</Button>
+              <Button href="#donate">Get Involved Now</Button>
               <Button onClick={() => setIsShareOpen(true)} variant="outlineDark">Share This Project</Button>
             </div>
           </div>
