@@ -54,7 +54,15 @@ const galleryImages = [
   [imagePaths.soccer, "James on the field"],
 ];
 
-function Button({ children, variant = "primary", className = "", href, onClick }) {
+type ButtonProps = {
+  children: React.ReactNode;
+  variant?: "primary" | "dark" | "outlineLight" | "outlineDark";
+  className?: string;
+  href?: string;
+  onClick?: () => void;
+};
+
+function Button({ children, variant = "primary", className = "", href, onClick }: ButtonProps) {
   const base = "inline-flex items-center justify-center rounded-full px-7 py-4 text-base font-semibold transition shadow-sm cursor-pointer";
   const styles =
     variant === "dark"
@@ -76,7 +84,12 @@ function Button({ children, variant = "primary", className = "", href, onClick }
   return <button type="button" onClick={onClick} className={`${base} ${styles} ${className}`}>{children}</button>;
 }
 
-function Card({ children, className = "" }) {
+type CardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+function Card({ children, className = "" }: CardProps) {
   return <div className={`rounded-3xl shadow-sm ${className}`}>{children}</div>;
 }
 
@@ -84,7 +97,11 @@ function ArrowIcon() {
   return <span className="ml-2 text-lg leading-none">→</span>;
 }
 
-function WaveDivider({ flip = false }) {
+type WaveDividerProps = {
+  flip?: boolean;
+};
+
+function WaveDivider({ flip = false }: WaveDividerProps) {
   return (
     <div className={`relative h-16 overflow-hidden ${flip ? "rotate-180" : ""}`}>
       <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
@@ -97,7 +114,14 @@ function WaveDivider({ flip = false }) {
   );
 }
 
-function ImageFrame({ src, alt, className = "", label }) {
+type ImageFrameProps = {
+  src: string;
+  alt: string;
+  className?: string;
+  label?: string;
+};
+
+function ImageFrame({ src, alt, className = "", label }: ImageFrameProps) {
   return (
     <div className={`group relative overflow-hidden bg-[#BFEFE6] ${className}`}>
       <img src={src} alt={alt} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
@@ -111,7 +135,12 @@ function ImageFrame({ src, alt, className = "", label }) {
   );
 }
 
-function SectionEyebrow({ children, light = false }) {
+type SectionEyebrowProps = {
+  children: React.ReactNode;
+  light?: boolean;
+};
+
+function SectionEyebrow({ children, light = false }: SectionEyebrowProps) {
   return (
     <p className={`mb-4 text-sm font-semibold uppercase tracking-[0.25em] ${light ? "text-[#BFEFE6]" : "text-[#08798C]"}`}>
       {children}
@@ -119,7 +148,12 @@ function SectionEyebrow({ children, light = false }) {
   );
 }
 
-function ShareModal({ isOpen, onClose }) {
+type ShareModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+function ShareModal({ isOpen, onClose }: ShareModalProps) {
   if (!isOpen) return null;
 
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
@@ -129,7 +163,7 @@ function ShareModal({ isOpen, onClose }) {
   const encodedTitle = encodeURIComponent(shareTitle);
   const encodedText = encodeURIComponent(`${shareText} ${shareUrl}`);
 
-  const shareLinks = [
+  const shareLinks: [string, string, string][] = [
     ["✉️", "Email", `mailto:?subject=${encodedTitle}&body=${encodedText}`],
     ["f", "Facebook", `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`],
     ["💬", "Messenger", `https://www.facebook.com/dialog/send?link=${encodedUrl}&app_id=291494419107518&redirect_uri=${encodedUrl}`],
