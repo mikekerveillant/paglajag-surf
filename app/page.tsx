@@ -577,9 +577,7 @@ export default function SiargaoSurfCampLandingPage() {
         </div>
       </section>
 
-      {
-
-      {/* WHY THIS MATTERS IN SIARGAO */}}
+      {/* WHY THIS MATTERS IN SIARGAO */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#063B4A] to-[#08798C] px-6 py-24 text-white md:px-10">
         <div className="absolute inset-0 opacity-15">
           <img src={imagePaths.ocean} alt="Siargao coastline" className="h-full w-full object-cover" />
