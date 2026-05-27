@@ -352,7 +352,7 @@ export default function SiargaoSurfCampLandingPage() {
             <div className="hidden lg:block">
               <div className="grid grid-cols-2 gap-4">
                 <ImageFrame src={imagePaths.youthRoom} alt="Paglajag youth leaders" label="Youth Leaders" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Only 2 Boards" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
+                <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Surfboards" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
                 <ImageFrame src={imagePaths.lantern} alt="Solar lantern" label="Solar Lanterns" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
                 <ImageFrame src={imagePaths.youthGroup} alt="Youth community" label="150+ Youth" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
               </div>
@@ -419,29 +419,38 @@ export default function SiargaoSurfCampLandingPage() {
             Hi, I’m James.
             <br />
             <br />
-            I’m working on a project to support the Paglajag youth in Anajawan through a community surf camp.
-            <br />
-            <br />
-            Together with a few friends and surf coaches from General Luna, Siargao, we’re planning a 2-day camp where kids can learn how to surf in a safe and encouraging environment.
+            I’m working on a project to support the Paglajag youth in Anajawan Island, a far-flung island off the mainland of Siargao, Philippines through a surf camp and community empowerment initiative.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            It’s not just about surfing.
+            It feels unjust that communities surrounded by water often have little access to it in the same way others do.
             <br />
             <br />
-            It’s about building confidence, discipline, teamwork, and creating positive experiences together.
+            I am currently looking for partners and donors to help provide at least five (5) surfboards to the community and organize a two-day surf camp where children can safely learn how to surf in a fun, encouraging environment.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            We’re also raising funds to help keep the project going.
+            But this initiative is about much more than surfing.
             <br />
             <br />
-            Part of that includes providing solar lanterns so children can study at night and families feel safer after dark.
-            We’re also hoping to purchase more surfboards so more young people — especially girls — can participate.
+            It’s about building confidence, community, and opportunity for the youth of Anajawan.
+            These kids deserve the chance to experience the joy of the ocean that surrounds them and to discover new passions and possibilities.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            My hope is that this can grow into something that creates more opportunities for the community and helps young people feel supported, inspired, and proud of where they come from.
+            Exposure to mentors and instructors at a young age can also open doors to surfing not only as a sport or hobby, but potentially even as a livelihood, especially with Siargao’s growing tourism industry.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-[#34616B]">
+            Another important part of empowering the Anajawan community is providing solar lanterns so children can study at night and families can feel safer after dark.
+            <br />
+            <br />
+            Many of the youth on the island work tirelessly to pursue scholarships and continue their education in Surigao.
+            Access to reliable lighting can make a meaningful difference in helping them achieve their goals and invest in a brighter future for themselves and their community.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-[#34616B]">
+            My hope is that this initiative grows into something that creates even more opportunities for the community and helps young people feel supported, inspired, and proud of where they come from.
           </p>
         </div>
       </section>
