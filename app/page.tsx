@@ -328,10 +328,11 @@ export default function SiargaoSurfCampLandingPage() {
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-white/88 md:text-xl">
-                More surfboards. More opportunities. More youth in the water.
+                Youth in the water.
                 <br />
                 <br />
-                We’re raising funds for surfboards, solar lanterns, and safe instruction for the Paglajag community in Siargao.
+                Surfboards, solar lanterns, and surf instruction for the Anajawan Island community in Siargao.
+
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
