@@ -32,7 +32,7 @@ const videoPaths = {
 
 const stats = [
   ["150+", "youth in the Paglajag community"],
-  ["2", "surfboards currently available"],
+  ["Only 2", "surfboards currently available"],
   ["2022", "year Paglajag was founded"],
   ["7", "community development pillars"],
 ];
