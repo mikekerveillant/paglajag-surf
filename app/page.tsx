@@ -342,10 +342,10 @@ export default function SiargaoSurfCampLandingPage() {
 
             <div className="hidden lg:block">
               <div className="grid grid-cols-2 gap-4">
-                <ImageFrame src={imagePaths.youthRoom} alt="Paglajag youth leaders" label="Youth Leaders" className="h-56 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Only 2 Boards" className="mt-12 h-64 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.lantern} alt="Solar lantern" label="Solar Lanterns" className="h-52 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.youthGroup} alt="Youth community" label="150+ Youth" className="h-56 rounded-[2rem] ring-1 ring-white/20" />
+                <ImageFrame src={imagePaths.youthRoom} alt="Paglajag youth leaders" label="Youth Leaders" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
+                <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Only 2 Boards" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
+                <ImageFrame src={imagePaths.lantern} alt="Solar lantern" label="Solar Lanterns" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
+                <ImageFrame src={imagePaths.youthGroup} alt="Youth community" label="150+ Youth" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
               </div>
             </div>
           </div>
@@ -398,9 +398,9 @@ export default function SiargaoSurfCampLandingPage() {
 
       {/* STORY */}
       <section id="story" className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-16 md:grid-cols-2 md:px-10">
-        <div className="relative min-h-[560px]">
-          <ImageFrame src={imagePaths.james} alt="James in Siargao" className="absolute left-0 top-0 h-[520px] w-[78%] rounded-[2rem]" />
-          <ImageFrame src={imagePaths.surfing} alt="James surfing" className="absolute bottom-0 right-0 h-64 w-[46%] rounded-[2rem] border-8 border-[#ECFBF8]" label="Started surfing at 4" />
+        <div className="grid grid-cols-2 gap-4">
+          <ImageFrame src={imagePaths.james} alt="James in Siargao" className="h-[520px] rounded-[2rem]" label="James" />
+          <ImageFrame src={imagePaths.surfing} alt="James surfing" className="h-[520px] rounded-[2rem]" label="Started surfing at 4" />
         </div>
 
         <div className="flex flex-col justify-center">
@@ -564,7 +564,7 @@ export default function SiargaoSurfCampLandingPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Surfboards" className="h-80 rounded-[2rem]" />
-          <ImageFrame src={imagePaths.youthGroup} alt="Paglajag youth" label="Community" className="mt-16 h-80 rounded-[2rem]" />
+          <ImageFrame src={imagePaths.youthGroup} alt="Paglajag youth" label="Community" className="h-80 rounded-[2rem]" />
           <div className="col-span-2 rounded-[2rem] bg-gradient-to-br from-[#063B4A] to-[#08798C] p-8 text-white shadow-sm">
             <p className="text-5xl font-semibold">2 boards</p>
             <p className="mt-3 max-w-md text-white/75">for a community of 150+ youth. More boards means more access, more inclusion, and more time in the water.</p>
@@ -645,13 +645,13 @@ export default function SiargaoSurfCampLandingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-6 md:grid-rows-2">
-            <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="col-span-2 h-80 rounded-[2rem] md:row-span-2 md:h-full" label="Paglajag" />
-            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="col-span-2 h-56 rounded-[2rem]" label="Community" />
-            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-56 rounded-[2rem]" label="Boards" />
-            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-56 rounded-[2rem]" label="Surf" />
-            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-56 rounded-[2rem]" label="Siargao" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="col-span-2 h-56 rounded-[2rem]" label="Discipline" />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="Paglajag" />
+            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Community" />
+            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Boards" />
+            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Surf" />
+            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Siargao" />
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Discipline" />
           </div>
         </div>
       </section>
