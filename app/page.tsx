@@ -329,7 +329,7 @@ export default function SiargaoSurfCampLandingPage() {
           <div className="grid items-end gap-12 pb-24 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="max-w-4xl">
               <p className="mb-5 inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-sm backdrop-blur">
-                A youth surf camp and community initiative in Anajawan, Del Carmen
+                A youth surf camp and community initiative in Anajawan Island, General Luna, Siargao, Philippines
               </p>
 
               <h1 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
@@ -831,7 +831,7 @@ export default function SiargaoSurfCampLandingPage() {
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
           <div>
             <h3 className="text-2xl font-semibold">Empowering Paglajag</h3>
-            <p className="mt-2 text-white/65">Anajawan, Del Carmen, Siargao · Summer 2026</p>
+            <p className="mt-2 text-white/65">Anajawan Island, General Luna, Siargao, Philippines · Summer 2026</p>
           </div>
           <div className="space-y-2 text-white/78">
             <p>📍 Manila, Philippines</p>
