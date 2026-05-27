@@ -577,42 +577,9 @@ export default function SiargaoSurfCampLandingPage() {
         </div>
       </section>
 
-      {/* WHY SURFING */}
-      <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-24 md:grid-cols-2 md:px-10">
-        <div className="flex flex-col justify-center">
-          <SectionEyebrow>Why Surfing Matters</SectionEyebrow>
-          <h2 className="text-4xl font-semibold leading-tight md:text-6xl">The ocean is right there. Access is the missing piece.</h2>
-          <p className="mt-8 text-lg leading-8 text-[#34616B]">
-            150+ youth.
-          <br />
-          Only 2 surfboards.
-          <br />
-          And many girls still waiting for a chance to learn.
-          </p>
-          <p className="mt-5 text-lg leading-8 text-[#34616B]">
-            Surfing can become more than a sport.
-          <br />
-          Confidence.
-          <br />
-          Discipline.
-          <br />
-          Community.
-          <br />
-          Opportunity.
-          </p>
-        </div>
+      {
 
-        <div className="grid grid-cols-2 gap-4">
-          <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Surfboards" className="h-80 rounded-[2rem]" />
-          <ImageFrame src={imagePaths.youthGroup} alt="Paglajag youth" label="Community" className="h-80 rounded-[2rem]" />
-          <div className="col-span-2 rounded-[2rem] bg-gradient-to-br from-[#063B4A] to-[#08798C] p-8 text-white shadow-sm">
-            <p className="text-5xl font-semibold">2 boards</p>
-            <p className="mt-3 max-w-md text-white/75">for a community of 150+ youth. More boards means more access, more inclusion, and more time in the water.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY THIS MATTERS IN SIARGAO */}
+      {/* WHY THIS MATTERS IN SIARGAO */}}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#063B4A] to-[#08798C] px-6 py-24 text-white md:px-10">
         <div className="absolute inset-0 opacity-15">
           <img src={imagePaths.ocean} alt="Siargao coastline" className="h-full w-full object-cover" />
