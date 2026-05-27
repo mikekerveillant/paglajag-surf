@@ -407,9 +407,13 @@ export default function SiargaoSurfCampLandingPage() {
 
       {/* STORY */}
       <section id="story" className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-16 md:grid-cols-2 md:px-10">
-        <div className="grid grid-cols-2 gap-4">
-          <ImageFrame src={imagePaths.james} alt="James in Siargao" className="h-[520px] rounded-[2rem]" label="James" />
-          <ImageFrame src={imagePaths.surfing} alt="James surfing" className="h-[520px] rounded-[2rem]" label="Started surfing at 4" />
+        <div>
+          <ImageFrame
+            src="/images/paglajag-youth-leaders-james.jpg"
+            alt="Paglajag youth leaders with James"
+            className="h-[520px] w-full rounded-[2rem]"
+            label="Paglajag Youth Leaders"
+          />
         </div>
 
         <div className="flex flex-col justify-center">
