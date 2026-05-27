@@ -43,6 +43,14 @@ const aboutCards = [
   ["☀️", "Holistic Growth", "Its pillars include education, creativity, values formation, nutrition, livelihood, and scholarships."],
 ];
 
+const paglajagStory = [
+  "Paglajag—a Surigaonon term meaning ‘to sail’—is a holistic, community-driven initiative that nurtures values-based education while encouraging active participation and shared responsibility among stakeholders. Anchored in the Department of Education’s core values—Maka-Diyos, Maka-Tao, Makakalikasan, at Makabansa—Paglajag represents both a journey and a celebration of learning and service.",
+  "Launched in August 2022 by the Anajawan Elementary School Supreme Elementary Learner Government (SELG), the initiative began with simple environmental efforts such as coastal cleanups, recycling, and engaging children in protecting their natural surroundings. Since then, it has grown into a dynamic, youth-led program built on seven flagship pillars: environmental education, performing arts and creative expression, values formation, literacy development, nutrition support, livelihood initiatives, and scholarships.",
+  "From just 13 members, Paglajag has expanded into a vibrant movement of over 150 children and youth—reflecting the community’s shared commitment to education, environmental stewardship, and youth empowerment.",
+  "Guided by a deep love for the island and its people, Paglajag promotes sustainable development and community resilience through collaboration, innovation, and active engagement. Its programs take a holistic approach to child and youth development, integrating learning, creativity, well-being, and practical skills.",
+  "Paglajag envisions becoming a leading model for holistic and sustainable education in island and coastal communities across the Philippines—empowering young people to grow intellectually, creatively, emotionally, socially, and spiritually, and to become compassionate, self-reliant leaders and changemakers.",
+];
+
 const donationCards = [
   ["🌊", "Surfboards", "Additional boards will allow more youth to participate, including girls who are eager to learn.", imagePaths.surfboards],
   ["💡", "Solar Lanterns", "Lanterns help children study at night and give families more safety and comfort after dark.", imagePaths.lantern],
@@ -267,6 +275,7 @@ function ShareModal({ isOpen, onClose }: ShareModalProps) {
 function runComponentSmokeTests() {
   console.assert(stats.length === 4, "Expected four impact stats");
   console.assert(donationCards.length === 3, "Expected three donation support cards");
+  console.assert(paglajagStory.length === 5, "Expected full Paglajag story paragraphs");
   console.assert(galleryImages.length === 6, "Expected six gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(videoPaths.drone === "/videos/drone-siargao.mp4", "Expected drone video path to be defined");
@@ -463,6 +472,28 @@ export default function SiargaoSurfCampLandingPage() {
                 </div>
               </Card>
             ))}
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 backdrop-blur md:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#BFEFE6]">The Full Story</p>
+              <h3 className="mt-4 text-3xl font-semibold leading-tight text-white md:text-4xl">
+                Paglajag means “to sail.”
+              </h3>
+              <p className="mt-6 text-lg leading-8 text-white/75">
+                What began as a small youth-led environmental effort has grown into a movement of learning, service, creativity, and community care.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-white/95 p-8 text-[#063B4A] shadow-2xl md:p-10">
+              <div className="space-y-6">
+                {paglajagStory.map((paragraph, index) => (
+                  <p key={index} className="leading-8 text-[#34616B]">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
