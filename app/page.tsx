@@ -87,11 +87,12 @@ const roadmapGoals = [
 ];
 
 const galleryImages = [
-  [imagePaths.youthRoom, "Paglajag youth leaders"],
+  [imagePaths.youthRoom, "PAGLAJAG YOUTH LEADERS"],
   [imagePaths.youthGroup, "Paglajag community"],
-  [imagePaths.ocean, "Siargao ocean"],
-  ["/images/paglajag-youth-surfer.jpg", "Paglajag youth surfer"],
-  [imagePaths.surfing, "James surfing"],
+  [imagePaths.ocean, "Anajawan Island"],
+  ["/images/paglajag-youth-surfer.jpg", "Paglajag youth"],
+  ["/images/paglajag-mentoring.jpg", "Paglajag youth"],
+  [imagePaths.surfing, "Surfs up"],
 ];
 
 type ButtonProps = {
@@ -275,7 +276,7 @@ function runComponentSmokeTests() {
   console.assert(stats.length === 4, "Expected four impact stats");
   console.assert(donationCards.length === 3, "Expected three donation support cards");
   console.assert(paglajagStory.length === 5, "Expected full Paglajag story paragraphs");
-  console.assert(galleryImages.length === 5, "Expected five gallery images");
+  console.assert(galleryImages.length === 6, "Expected six gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(videoPaths.drone === "/videos/paglajag-surfing.MP4", "Expected surfing video path to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
@@ -688,11 +689,12 @@ export default function SiargaoSurfCampLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="Paglajag" />
+            <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="PAGLAJAG YOUTH LEADERS" />
             <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Community" />
-            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Siargao" />
-            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Youth" />
-            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Surf" />
+            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Anajawan Island" />
+            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
+            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Surfs up" />
           </div>
         </div>
       </section>
