@@ -14,25 +14,25 @@ const colors = {
 };
 
 const imagePaths = {
-  hero: "/images/paglajag-hero.jpg",
+  hero: "/images/paglajag-youth-surfer.jpg",
   james: "/images/james-siargao.jpg",
   youthRoom: "/images/paglajag-youth-room.jpg",
   youthGroup: "/images/paglajag-youth-group.jpg",
   surfboards: "/images/surfboards.jpg",
   lantern: "/images/solar-lamp.jpg",
   instructors: "/images/surf-instructors.jpg",
-  ocean: "/images/siargao-ocean.jpg",
+  ocean: "/images/paglajag-beach.jpeg",
   soccer: "/images/james-soccer.jpg",
   surfing: "/images/james-surfing.jpg",
 };
 
 const videoPaths = {
-  drone: "/videos/drone-siargao.mp4",
+  drone: "/videos/paglajag-surfing.MP4",
 };
 
 const stats = [
   ["150+", "youth in the Paglajag community"],
-  ["Only 2", "surfboards currently available"],
+  ["Only 2", "surfboards currently available on the island"],
   ["2022", "year Paglajag was founded"],
   ["7", "community development pillars"],
 ];
@@ -278,7 +278,7 @@ function runComponentSmokeTests() {
   console.assert(paglajagStory.length === 5, "Expected full Paglajag story paragraphs");
   console.assert(galleryImages.length === 6, "Expected six gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
-  console.assert(videoPaths.drone === "/videos/drone-siargao.mp4", "Expected drone video path to be defined");
+  console.assert(videoPaths.drone === "/videos/paglajag-surfing.MP4", "Expected surfing video path to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
   console.assert(progressPercent > 0, "Expected donation progress to be greater than zero");
   console.assert(partners.length === 3, "Expected three partner cards");
