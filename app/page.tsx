@@ -19,7 +19,7 @@ const imagePaths = {
   youthRoom: "/images/paglajag-youth-room.jpg",
   youthGroup: "/images/paglajag-youth-group.jpg",
   surfboards: "/images/surfboards.jpg",
-  lantern: "/images/solar-lantern.jpg",
+  lantern: "/images/solar-lamp.jpg",
   instructors: "/images/surf-instructors.jpg",
   ocean: "/images/siargao-ocean.jpg",
   soccer: "/images/james-soccer.jpg",
@@ -853,3 +853,4 @@ export default function SiargaoSurfCampLandingPage() {
     </main>
   );
 }
+
