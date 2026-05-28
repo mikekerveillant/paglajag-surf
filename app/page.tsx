@@ -501,7 +501,8 @@ export default function SiargaoSurfCampLandingPage() {
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
             My hope is that this initiative grows into something that creates even more opportunities for the community and helps young people feel supported, inspired, and proud of where they come from.
           </p>
-                  </div>
+        </div>
+      </div>
       </section>
 
       <WaveDivider />
