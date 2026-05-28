@@ -80,10 +80,10 @@ const siargaoReasons = [
 ];
 
 const roadmapGoals = [
-  ["June 2026", "Launch the First Surf Camp", "Host the first Paglajag youth surf camp in Anajawan with local coaches and community volunteers."],
-  ["July 2026", "Expand Equipment Access", "Purchase additional beginner surfboards and safety gear so more youth — especially girls — can participate."],
-  ["August 2026", "Solar Lantern Distribution", "Provide solar lanterns to support safer evenings and help children study after dark."],
-  ["Late 2026", "Build Long-Term Momentum", "Develop recurring surf sessions, mentorship, and future partnerships that continue supporting the community."],
+  ["June 2026", "Launch first surf camp and solar lantern distribution", "Host the first Paglajag youth surf camp in Anajawan with local coaches while distributing solar lanterns to families across the community."],
+  ["August 2026", "Expand equipment access", "Purchase additional beginner surfboards and expand access to equipment so more youth can participate in future camps and sessions."],
+  ["Sep–Oct 2026", "Return for second surf camp", "Return to Anajawan for a second community surf camp focused on mentorship, progression, and continued youth engagement."],
+  ["Ongoing", "Build long-term momentum", "Develop recurring surf sessions, mentorship opportunities, and future partnerships that continue supporting the community."],
 ];
 
 const galleryImages = [
