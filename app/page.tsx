@@ -449,7 +449,7 @@ export default function SiargaoSurfCampLandingPage() {
             Another important part of empowering the Anajawan community is providing solar lanterns so children can study at night and families can feel safer after dark.
             <br />
             <br />
-            Many of the youth on the island work tirelessly to pursue scholarships and continue their education in Surigao.
+            Many of the youth on the island work tirelessly to pursue scholarships and continue their education in Surigao, a bigger neighboring island with 2 public universities.
             Access to reliable lighting can make a meaningful difference in helping them achieve their goals and invest in a brighter future for themselves and their community.
           </p>
 
