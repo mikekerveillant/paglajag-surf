@@ -92,6 +92,7 @@ const galleryImages = [
   [imagePaths.lantern, "Solar lanterns"],
   [imagePaths.youthGroup, "Paglajag community"],
   [imagePaths.ocean, "Siargao ocean"],
+  ["/images/paglajag-youth-surfer.jpg", "Paglajag youth surfer"],
   [imagePaths.surfing, "James surfing"],
 ];
 
@@ -276,7 +277,7 @@ function runComponentSmokeTests() {
   console.assert(stats.length === 4, "Expected four impact stats");
   console.assert(donationCards.length === 3, "Expected three donation support cards");
   console.assert(paglajagStory.length === 5, "Expected full Paglajag story paragraphs");
-  console.assert(galleryImages.length === 6, "Expected six gallery images");
+  console.assert(galleryImages.length === 7, "Expected seven gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(videoPaths.drone === "/videos/paglajag-surfing.MP4", "Expected surfing video path to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
@@ -674,23 +675,6 @@ export default function SiargaoSurfCampLandingPage() {
               </Card>
             ))}
           </div>
-
-          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_0.8fr]">
-            <div className="rounded-[2rem] bg-white/10 p-8 backdrop-blur md:p-10">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#BFEFE6]">The Bigger Picture</p>
-
-              <p className="mt-6 text-2xl font-semibold leading-relaxed text-white md:text-3xl">
-                When youth feel connected to their community, the ocean, and a positive future — it changes what they believe is possible.
-              </p>
-            </div>
-
-            <ImageFrame
-              src="/images/paglajag-youth-surfer.jpg"
-              alt="Paglajag youth in Siargao"
-              className="min-h-[320px] rounded-[2rem]"
-              label="Siargao"
-            />
-          </div>
         </div>
       </section>
 
@@ -713,7 +697,8 @@ export default function SiargaoSurfCampLandingPage() {
             <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Solar Lanterns" />
             <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Community" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Siargao" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Surf" />
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Youth" />
+            <ImageFrame src={galleryImages[6][0]} alt={galleryImages[6][1]} className="h-72 rounded-[2rem]" label="Surf" />
           </div>
         </div>
       </section>
