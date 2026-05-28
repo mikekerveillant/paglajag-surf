@@ -456,6 +456,42 @@ export default function SiargaoSurfCampLandingPage() {
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
             My hope is that this initiative grows into something that creates even more opportunities for the community and helps young people feel supported, inspired, and proud of where they come from.
           </p>
+                  <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div className="rounded-[2rem] border border-[#BFEFE6] bg-white p-7 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
+                Education
+              </p>
+
+              <h3 className="mt-4 text-2xl font-semibold text-[#063B4A]">
+                International School Manila (ISM)
+              </h3>
+
+              <p className="mt-4 leading-7 text-[#34616B]">
+                I’m currently a student at ISM, and my favorite subjects are Math and English.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-[#BFEFE6] bg-white p-7 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
+                Experience
+              </p>
+
+              <h3 className="mt-4 text-2xl font-semibold text-[#063B4A]">
+                Surfing & Community
+              </h3>
+
+              <p className="mt-4 leading-7 text-[#34616B]">
+                I started surfing at the age of 4 in Los Angeles, spending time in the waters of Venice and Malibu.
+                What began as something fun quickly became something I truly love.
+              </p>
+
+              <p className="mt-5 leading-7 text-[#34616B]">
+                Now based in Manila, I go to Siargao as often as I can—though never quite as much as I’d like.
+                I’m drawn not just to the waves, but to the culture and the sense of community that comes with it.
+                Surfing continues to be a big part of who I am.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
