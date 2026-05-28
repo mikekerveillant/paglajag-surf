@@ -333,7 +333,7 @@ export default function SiargaoSurfCampLandingPage() {
               </p>
 
               <h1 className="max-w-5xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
-                Empowering the Paglajag youths in Siargao through surf, light, and opportunity.
+                Empowering the Paglajag Youth through surf, light, and opportunity.
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-white/88 md:text-xl">
@@ -412,7 +412,7 @@ export default function SiargaoSurfCampLandingPage() {
             src="/images/paglajag-youth-leaders-james.jpg"
             alt="Paglajag youth leaders with James"
             className="h-[520px] w-full rounded-[2rem]"
-            label="Paglajag Youth Leaders"
+            label="With the Paglajag youth leaders"
           />
         </div>
 
@@ -818,7 +818,14 @@ export default function SiargaoSurfCampLandingPage() {
             </p>
             <div className="mt-10 rounded-3xl bg-[#ECFBF8] p-8 ring-1 ring-[#BFEFE6]">
               <p className="text-sm uppercase tracking-[0.25em] text-[#08798C]">Donate via GCash</p>
-              <p className="mt-3 text-4xl font-semibold tracking-tight text-[#063B4A]">09175082889</p>
+
+              <div className="mx-auto mt-6 max-w-[320px] overflow-hidden rounded-[2rem] bg-white p-4 shadow-sm ring-1 ring-[#BFEFE6]">
+                <img
+                  src="/images/GCash.jpg"
+                  alt="GCash QR Code"
+                  className="w-full rounded-[1.5rem] object-cover"
+                />
+              </div>
             </div>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <Button href="#donate">Donate Now</Button>
