@@ -14,7 +14,7 @@ const colors = {
 };
 
 const imagePaths = {
-  hero: "/images/paglajag-youth-surfer.jpg",
+  hero: "/images/paglajag-hero.jpg",
   james: "/images/james-siargao.jpg",
   youthRoom: "/images/paglajag-youth-room.jpg",
   youthGroup: "/images/paglajag-youth-group.jpg",
@@ -632,7 +632,7 @@ export default function SiargaoSurfCampLandingPage() {
             </div>
 
             <ImageFrame
-              src={imagePaths.hero}
+              src="/images/paglajag-youth-surfer.jpg"
               alt="Paglajag youth in Siargao"
               className="min-h-[320px] rounded-[2rem]"
               label="Siargao"
