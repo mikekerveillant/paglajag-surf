@@ -88,8 +88,6 @@ const roadmapGoals = [
 
 const galleryImages = [
   [imagePaths.youthRoom, "Paglajag youth leaders"],
-  [imagePaths.surfboards, "Surfboards for the camp"],
-  [imagePaths.lantern, "Solar lanterns"],
   [imagePaths.youthGroup, "Paglajag community"],
   [imagePaths.ocean, "Siargao ocean"],
   ["/images/paglajag-youth-surfer.jpg", "Paglajag youth surfer"],
@@ -277,7 +275,7 @@ function runComponentSmokeTests() {
   console.assert(stats.length === 4, "Expected four impact stats");
   console.assert(donationCards.length === 3, "Expected three donation support cards");
   console.assert(paglajagStory.length === 5, "Expected full Paglajag story paragraphs");
-  console.assert(galleryImages.length === 7, "Expected seven gallery images");
+  console.assert(galleryImages.length === 5, "Expected five gallery images");
   console.assert(colors.deepOcean === "#063B4A", "Expected ocean color palette to be defined");
   console.assert(videoPaths.drone === "/videos/paglajag-surfing.MP4", "Expected surfing video path to be defined");
   console.assert(typeof ShareModal === "function", "Expected ShareModal component to exist");
@@ -686,19 +684,15 @@ export default function SiargaoSurfCampLandingPage() {
               <SectionEyebrow>Project Gallery</SectionEyebrow>
               <h2 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">Real people, real community, real impact.</h2>
             </div>
-            <p className="max-w-md leading-7 text-[#34616B]">
-              These images should be replaced with the actual photos from the Canva deck once they are saved into your site’s images folder.
-            </p>
+            
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="Paglajag" />
-            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Surfboards" />
-            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Solar Lanterns" />
-            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Community" />
-            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Siargao" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Youth" />
-            <ImageFrame src={galleryImages[6][0]} alt={galleryImages[6][1]} className="h-72 rounded-[2rem]" label="Surf" />
+            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Community" />
+            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Siargao" />
+            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Youth" />
+            <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Surf" />
           </div>
         </div>
       </section>
