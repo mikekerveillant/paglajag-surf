@@ -80,7 +80,7 @@ const siargaoReasons = [
 ];
 
 const roadmapGoals = [
-  ["June 2026", "Launch first surf camp and solar lantern distribution", "Host the first Paglajag youth surf camp in Anajawan with local coaches while distributing solar lanterns to families across the community."],
+  ["June 2026", "Launch first surf camp + solar lantern distribution", "Host the first Paglajag youth surf camp in Anajawan with local coaches + distribute solar lanterns to families in the community."],
   ["August 2026", "Expand equipment access", "Purchase additional beginner surfboards and expand access to equipment so more youth can participate in future camps and sessions."],
   ["Sep–Oct 2026", "Return for second surf camp", "Return to Anajawan for a second community surf camp focused on mentorship, progression, and continued youth engagement."],
   ["Ongoing", "Build long-term momentum", "Develop recurring surf sessions, mentorship opportunities, and future partnerships that continue supporting the community."],
@@ -424,7 +424,7 @@ export default function SiargaoSurfCampLandingPage() {
             It feels unjust that communities surrounded by water often have little access to it in the same way others do.
             <br />
             <br />
-            I am currently looking for partners and donors to help provide at least five (5) surfboards to the community and organize a two-day surf camp where children can safely learn how to surf in a fun, encouraging environment.
+            I am currently looking for partners and donors to help provide at least ten (10) surfboards to the community and organize a two-day surf camp where children can safely learn how to surf in a fun, encouraging environment.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-[#34616B]">
@@ -690,7 +690,7 @@ export default function SiargaoSurfCampLandingPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="PAGLAJAG YOUTH LEADERS" />
-            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Community" />
+            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Paglajag Community" />
             <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Anajawan Island" />
             <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
