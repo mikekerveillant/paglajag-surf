@@ -239,7 +239,7 @@ function ShareModal({ isOpen, onClose }: ShareModalProps) {
         <div className="p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#08798C]">Share this project</p>
           <h3 className="mt-3 text-3xl font-semibold text-[#063B4A]">Help spread the word.</h3>
-          <p className="mt-4 leading-7 text-[#34616B]">
+          <p className="mt-4 text-sm leading-6 text-[#34616B]">
             Share the Paglajag surf camp project with friends, family, or anyone who may want to support the youth in Siargao.
           </p>
 
@@ -427,7 +427,7 @@ export default function SiargaoSurfCampLandingPage() {
                 International School Manila (ISM)
               </h3>
 
-              <p className="mt-4 leading-7 text-[#34616B]">
+              <p className="mt-4 text-sm leading-6 text-[#34616B]">
                 I’m currently a student at ISM, and my favorite subjects are Math and English.
                 <br />
                 <br />
@@ -447,12 +447,12 @@ export default function SiargaoSurfCampLandingPage() {
                 Surfing & Community
               </h3>
 
-              <p className="mt-4 leading-7 text-[#34616B]">
+              <p className="mt-4 text-sm leading-6 text-[#34616B]">
                 I started surfing at the age of 4 in Los Angeles, spending time in the waters of Venice and Malibu.
                 What began as something fun quickly became something I truly love.
               </p>
 
-              <p className="mt-5 leading-7 text-[#34616B]">
+              <p className="mt-5 text-sm leading-6 text-[#34616B]">
                 Now based in Manila, I go to Siargao as often as I can—though never quite as much as I’d like.
                 I’m drawn not just to the waves, but to the culture and the sense of community that comes with it.
                 Surfing continues to be a big part of who I am.
@@ -781,7 +781,7 @@ export default function SiargaoSurfCampLandingPage() {
                 <div className="p-8">
                   <div className="mb-5 text-4xl">{icon}</div>
                   <h3 className="text-2xl font-semibold">{title}</h3>
-                  <p className="mt-4 leading-7 text-[#34616B]">{text}</p>
+                  <p className="mt-4 text-sm leading-6 text-[#34616B]">{text}</p>
                 </div>
               </Card>
             ))}
@@ -810,7 +810,7 @@ export default function SiargaoSurfCampLandingPage() {
                     {icon}
                   </div>
                   <h3 className="text-2xl font-semibold text-[#063B4A]">{title}</h3>
-                  <p className="mt-4 leading-7 text-[#34616B]">{text}</p>
+                  <p className="mt-4 text-sm leading-6 text-[#34616B]">{text}</p>
                 </div>
               </Card>
             ))}
