@@ -88,11 +88,11 @@ const roadmapGoals = [
 
 const galleryImages = [
   [imagePaths.youthRoom, "Paglajag youth leaders"],
-  [imagePaths.youthGroup, "Paglajag community"],
   [imagePaths.surfboards, "Surfboards for the camp"],
-  [imagePaths.surfing, "James surfing"],
+  [imagePaths.lantern, "Solar lanterns"],
+  [imagePaths.youthGroup, "Paglajag community"],
   [imagePaths.ocean, "Siargao ocean"],
-  [imagePaths.soccer, "James on the field"],
+  [imagePaths.surfing, "James surfing"],
 ];
 
 type ButtonProps = {
@@ -326,7 +326,7 @@ export default function SiargaoSurfCampLandingPage() {
             <span>Siargao · Summer 2026</span>
           </nav>
 
-          <div className="grid items-end gap-12 pb-24 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="pb-24">
             <div className="max-w-4xl">
               <p className="mb-5 inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-sm backdrop-blur">
                 A youth surf camp and community initiative in Anajawan Island, General Luna, Siargao, Philippines
@@ -340,21 +340,12 @@ export default function SiargaoSurfCampLandingPage() {
                 More surfboards. More opportunities. More youth in the water.
                 <br />
                 <br />
-                We’re raising funds for surfboards, solar lanterns, and safe instruction for the Paglajag community in Siargao.
+                We’re raising funds for surfboards, solar lanterns, and guided surf instruction for the Paglajag community in Siargao.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Button href="#donate">Donate Now <span className="ml-2">♡</span></Button>
                 <Button href="#story" variant="outlineLight">Read the Story <ArrowIcon /></Button>
-              </div>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="grid grid-cols-2 gap-4">
-                <ImageFrame src={imagePaths.youthRoom} alt="Paglajag youth leaders" label="Youth Leaders" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.surfboards} alt="Surfboards" label="Surfboards" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.lantern} alt="Solar lantern" label="Solar Lanterns" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
-                <ImageFrame src={imagePaths.youthGroup} alt="Youth community" label="150+ Youth" className="h-60 rounded-[2rem] ring-1 ring-white/20" />
               </div>
             </div>
           </div>
@@ -718,11 +709,11 @@ export default function SiargaoSurfCampLandingPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <ImageFrame src={galleryImages[0][0]} alt={galleryImages[0][1]} className="h-72 rounded-[2rem]" label="Paglajag" />
-            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Community" />
-            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Boards" />
-            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Surf" />
+            <ImageFrame src={galleryImages[1][0]} alt={galleryImages[1][1]} className="h-72 rounded-[2rem]" label="Surfboards" />
+            <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Solar Lanterns" />
+            <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Community" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Siargao" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Discipline" />
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Surf" />
           </div>
         </div>
       </section>
