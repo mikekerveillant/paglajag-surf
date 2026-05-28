@@ -63,8 +63,8 @@ const progressPercent = Math.round((amountRaised / fundingGoal) * 100);
 
 const impactTargets = [
   ["₱1,500", "Helps fund transport and fuel for surf instructors traveling from General Luna."],
-  ["₱3,000", "Provides a solar lantern for a household so children can study safely at night."],
-  ["₱12,000", "Helps purchase a beginner surfboard so more youth can participate in the camp."],
+  ["₱1,000", "Provides a solar lantern for a household so children can study safely at night."],
+  ["₱15,000", "Helps purchase a beginner surfboard so more youth can participate in the camp."],
 ];
 
 const partners = [
