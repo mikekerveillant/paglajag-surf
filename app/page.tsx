@@ -417,49 +417,7 @@ export default function SiargaoSurfCampLandingPage() {
           />
         
 
-          <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-            <div className="rounded-[2rem] border border-[#BFEFE6] bg-white p-7 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
-                Education
-              </p>
-
-              <h3 className="mt-4 text-2xl font-semibold text-[#063B4A]">
-                International School Manila (ISM)
-              </h3>
-
-              <p className="mt-4 text-sm leading-6 text-[#34616B]">
-                I’m currently a student at ISM, and my favorite subjects are Math and English.
-                <br />
-                <br />
-                I play varsity soccer for my school.
-                <br />
-                <br />
-                I also play for Kaya Football Club, which has helped me grow in discipline, teamwork, and commitment—values I carry both on the field and in the water.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-[#BFEFE6] bg-white p-7 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
-                Experience
-              </p>
-
-              <h3 className="mt-4 text-2xl font-semibold text-[#063B4A]">
-                Surfing & Community
-              </h3>
-
-              <p className="mt-4 text-sm leading-6 text-[#34616B]">
-                I started surfing at the age of 4 in Los Angeles, spending time in the waters of Venice and Malibu.
-                What began as something fun quickly became something I truly love.
-              </p>
-
-              <p className="mt-5 text-sm leading-6 text-[#34616B]">
-                Now based in Manila, I go to Siargao as often as I can—though never quite as much as I’d like.
-                I’m drawn not just to the waves, but to the culture and the sense of community that comes with it.
-                Surfing continues to be a big part of who I am.
-              </p>
-            </div>
           </div>
-        </div>
 
         <div className="flex flex-col justify-center">
           <SectionEyebrow>The Beginning</SectionEyebrow>
@@ -503,6 +461,64 @@ export default function SiargaoSurfCampLandingPage() {
           </p>
         </div>
       </div>
+      </section>
+
+            <section className="bg-[#F6FBFA] px-6 py-24 md:px-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-14 max-w-3xl">
+            <SectionEyebrow>About Me</SectionEyebrow>
+            <h2 className="text-4xl font-semibold leading-tight text-[#063B4A] md:text-6xl">
+              A personal connection to surfing, community, and Siargao.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <Card className="border border-[#BFEFE6] bg-white shadow-sm">
+              <div className="p-8 md:p-10">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
+                  Education
+                </p>
+
+                <h3 className="mt-4 text-3xl font-semibold text-[#063B4A]">
+                  International School Manila (ISM)
+                </h3>
+
+                <p className="mt-6 text-base leading-7 text-[#34616B]">
+                  I’m currently a junior at ISM, and my favorite subjects are Math and English.
+                  <br />
+                  <br />
+                  I play varsity soccer for my school.
+                  <br />
+                  <br />
+                  I also play for Kaya Football Club, which has helped me grow in discipline, teamwork, and commitment—values I carry both on the field and in the water.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="border border-[#BFEFE6] bg-white shadow-sm">
+              <div className="p-8 md:p-10">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#08798C]">
+                  Experience
+                </p>
+
+                <h3 className="mt-4 text-3xl font-semibold text-[#063B4A]">
+                  Surfing & Community
+                </h3>
+
+                <p className="mt-6 text-base leading-7 text-[#34616B]">
+                  I started surfing at the age of 4 in Los Angeles, spending time in the waters of Venice and Malibu.
+                  What began as something fun quickly became something I truly love.
+                </p>
+
+                <p className="mt-5 text-base leading-7 text-[#34616B]">
+                  Now based in Manila, I go to Siargao as often as I can—though never quite as much as I’d like.
+                  I’m drawn not just to the waves, but to the culture and the sense of community that comes with it.
+                  Surfing continues to be a big part of who I am.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
       </section>
 
       <WaveDivider />
