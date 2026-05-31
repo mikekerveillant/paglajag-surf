@@ -592,7 +592,7 @@ export default function SiargaoSurfCampLandingPage() {
                 <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                   <div>
                     <p className="text-sm uppercase tracking-[0.25em] text-[#BFEFE6]">Raised So Far</p>
-                    <p className="mt-2 text-5xl font-semibold">₱48,500</p>
+                    <p className="mt-2 text-5xl font-semibold">₱68,500</p>
                   </div>
                   <div className="text-left md:text-right">
                     <p className="text-sm uppercase tracking-[0.25em] text-[#BFEFE6]">Goal</p>
