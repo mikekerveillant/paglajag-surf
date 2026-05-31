@@ -58,7 +58,7 @@ const donationCards = [
 ];
 
 const fundingGoal = 250000;
-const amountRaised = 48500;
+const amountRaised = 68500;
 const progressPercent = Math.round((amountRaised / fundingGoal) * 100);
 
 const impactTargets = [
