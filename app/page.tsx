@@ -20,7 +20,7 @@ const imagePaths = {
   youthGroup: "/images/paglajag-youth-group.jpg",
   surfboards: "/images/surfboards.jpg",
   lantern: "/images/solar-lamp.jpg",
-  instructors: "/images/surf-instructors.jpg",
+  instructors: "/images/instructors.jpeg",
   ocean: "/images/paglajag-beach.jpeg",
   soccer: "/images/james-soccer.jpg",
   surfing: "/images/james-surfing.jpg",
@@ -93,6 +93,10 @@ const galleryImages = [
   ["/images/paglajag-youth-surfer.jpg", "Paglajag youth"],
   ["/images/paglajag-mentoring.jpg", "Paglajag youth"],
   [imagePaths.surfing, "Surfs up"],
+    [
+    "/images/instructors2.jpeg",
+    "Local instructors and surf community"
+  ],
 ];
 
 type ButtonProps = {
@@ -694,7 +698,8 @@ export default function SiargaoSurfCampLandingPage() {
             <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Anajawan Island" />
             <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Surfs up" />
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Local instructors" 
+/>
           </div>
         </div>
       </section>
