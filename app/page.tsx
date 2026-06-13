@@ -92,7 +92,7 @@ const galleryImages = [
   [imagePaths.ocean, "Anajawan Island"],
   ["/images/paglajag-youth-surfer.jpg", "Paglajag youth"],
   ["/images/paglajag-mentoring.jpg", "Paglajag youth"],
-  ["/images/instructors2.jpeg","Local instructors and surf community"],
+  ["/images/instructors2.jpeg","Local instructors from the mainland"],
   [imagePaths.surfing, "Surfs up"],
   
 ];
@@ -696,7 +696,7 @@ export default function SiargaoSurfCampLandingPage() {
             <ImageFrame src={galleryImages[2][0]} alt={galleryImages[2][1]} className="h-72 rounded-[2rem]" label="Anajawan Island" />
             <ImageFrame src={galleryImages[3][0]} alt={galleryImages[3][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
             <ImageFrame src={galleryImages[4][0]} alt={galleryImages[4][1]} className="h-72 rounded-[2rem]" label="Paglajag Youth" />
-            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Local instructors" 
+            <ImageFrame src={galleryImages[5][0]} alt={galleryImages[5][1]} className="h-72 rounded-[2rem]" label="Local instructors from the mainland" 
 />
           </div>
         </div>
