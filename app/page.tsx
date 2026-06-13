@@ -92,11 +92,9 @@ const galleryImages = [
   [imagePaths.ocean, "Anajawan Island"],
   ["/images/paglajag-youth-surfer.jpg", "Paglajag youth"],
   ["/images/paglajag-mentoring.jpg", "Paglajag youth"],
+  ["/images/instructors2.jpeg","Local instructors and surf community"],
   [imagePaths.surfing, "Surfs up"],
-    [
-    "/images/instructors2.jpeg",
-    "Local instructors and surf community"
-  ],
+  
 ];
 
 type ButtonProps = {
